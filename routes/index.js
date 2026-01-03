@@ -35,4 +35,8 @@ router.get('/random', async(req, res, next) => {
   res.end("Hello world");
 });
 
+router.get('/pug', (req, res) => {
+  res.render('index', {title: 'Pug'})
+})
+
 module.exports = router;
